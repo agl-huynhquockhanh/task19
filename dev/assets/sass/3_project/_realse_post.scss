@@ -1,0 +1,85 @@
+.p-realsePost{
+    &__contentPost{
+        width: 78rem;
+        line-height: 1;
+    }
+    &__title{
+        background-color: $blue-color;
+        color: $blue-color2;
+        font-size: 2.4rem;
+        line-height: 1;
+        border-left: 1rem solid $blue-color2;
+        padding: 1.8rem 0 1.8rem 1rem;
+        margin-left: 1rem;
+    }
+    &__date{
+        font-size: 1.5rem;
+        text-align: right;
+        margin-top: 1.6rem;
+    }
+    &__caption{
+        margin-top: 3.5rem;
+    }
+    &__contentPost{
+        margin-top: 5rem;
+        line-height: 2.6rem;
+        font-size: 1.5rem;
+        p{
+            span{
+                display: block;
+                &:not(:first-child){
+                    margin-top: 3.5rem;
+                }
+                &:nth-child(3){
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    &__contentFlex{
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__textGroup{
+        font-size: 1.5rem;
+        width: 37.5rem;
+        &--p{
+            margin-top: 0;
+        }
+    }
+    &__pNav{
+        line-height: 1;
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 2.5rem 0;
+        border: 1px solid $grey-border;
+    }
+    &__next,
+    &__prev{
+        font-size: 1.5rem;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    // &__next{
+    //     width: 50%;
+    // }
+    &__prev{
+        text-align: right;
+        a{
+            &:first-child{
+                width: 320px;
+            }
+        }
+    }
+    &__iconLeft{
+        margin-right: 1.8rem;
+        border-right: 1px solid $grey-border;
+    }
+    &__iconRight{
+        margin-left: 1.8rem;
+    }
+}

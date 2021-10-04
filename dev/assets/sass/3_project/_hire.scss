@@ -1,0 +1,45 @@
+.p-hire{
+    &__banner{
+        background-image: url(../img/hire/bannerBot-hire.png);
+        height: 22rem;
+        max-width: 92rem;
+        margin: 10rem auto 0;
+    }
+    &__content{
+        max-width: 82rem;
+        margin: 0 auto;
+        line-height: 1;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    &__caption{
+        display: inline-block;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid $white-bg;
+    }
+    // List banner bottom
+    &__listLease{
+        display: flex;
+        margin-top: 2.2rem;
+    }
+    &__leaseItem{
+        display: flex;
+        flex-direction: column;
+        a{
+            &:not(:last-child){
+                margin-bottom: 2.8rem;
+            }
+            span{
+                margin-right: 1.2rem;
+            }
+        }
+        &:last-child{
+            margin-left: 2.8rem;
+        }
+    }
+}
+
+// <h3 class="p-hire__caption">ハイヤーサービスの車両情報</h3>

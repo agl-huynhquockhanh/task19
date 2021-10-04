@@ -1,0 +1,27 @@
+/*------------------------------------------------------------
+icon
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-iconList{
+    margin-top: 12.4rem;
+    display: flex;
+    justify-content: center;
+    &__item{
+        background-color: $blue-color3;
+        color: $white-bg;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:not(:first-child){
+            margin-left: 1.5rem;
+        }
+        a{
+            font-size: 2rem;
+        }
+    }
+}

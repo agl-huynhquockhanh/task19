@@ -1,0 +1,50 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+
+/*
+------------------------------------------------------------*/
+.c-title{
+	text-align: center;
+    line-height: 1;
+    h3{
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    p{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+// Title of page taxi
+.c-titleBanner{
+    text-align: center;
+    position: relative;
+    &__taxi{
+        margin-top: 8rem;
+        background-color: $yellow-color;
+        padding: 5rem 0;
+        h3{
+            font-size: 2.6rem;
+        }
+        p{
+            margin: 4.5rem auto 0;
+            font-size: 1.5rem;
+            max-width: 76.5rem;
+            text-align: left;
+        }
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: $yellow-color;
+        bottom: 0;
+        left: 50%;
+        border: 2rem solid transparent;
+        transform: translate(-50%, 20px) rotate(45deg)
+    }
+}
+

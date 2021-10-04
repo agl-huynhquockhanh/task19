@@ -1,0 +1,378 @@
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.p-top {
+  
+}
+
+.mySlides {
+  display: block;
+  position: relative;
+
+  &__groupText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+    color: $white-color;
+    line-height: 1;
+
+    &__text {
+      margin-top: 6rem;
+
+      a {
+        display: inline-block;
+
+        &:last-child {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.listdot {
+  display: none;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px
+  }
+}
+
+// Service
+.p-service {
+  background-color: $grey-bg;
+  padding: 6rem 0 9rem;
+
+  &-bg {
+    background-color: $white-bg;
+  }
+
+  &__mainContent {
+    padding-bottom: 6.5rem;
+    display: none;
+  }
+  &--active{
+    display: block;
+  }
+
+  &__totalTab {
+    display: flex;
+  }
+
+  &__tab {
+    width: 50%;
+    text-align: center;
+    line-height: 1;
+    padding: 2rem 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    color: $white-color;
+    background-color: $black-color;
+  }
+  &__color{
+    background-color: $yellow-color;
+    color: $white-bg;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+
+  &__main {
+    max-width: 100rem;
+    margin: 6.5rem auto;
+    display: flex;
+    justify-content: space-between;
+  
+    img {
+      margin-right: 3rem;
+      width: 50%;
+      padding: 0 1rem;
+    }
+  }
+  &__content {
+    width: 50%;
+  
+    h3 {
+      font-size: 2.4rem;
+      max-width: 35rem;
+    }
+  
+    p {
+      margin-top: 4rem;
+      font-size: 1.4rem;
+      max-width: 460px;
+    }
+  
+    a {
+      margin-top: 4rem;
+    }
+  }
+  
+  &__guild {
+    max-width: 981px;
+    margin: 6rem auto 0;
+    display: flex;
+    background-color: $grey-bg;
+  
+  }
+  
+  &__block {
+    width: 26.5rem;
+    background-color: black;
+    color: white;
+    height: 19rem;
+    display: flex;
+  
+    &-p {
+      margin: auto;
+    }
+  }
+  
+  &__blockImg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    p {
+      margin-top: 1.4rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+
+// Css section news
+.p-news{
+  padding-top: 7rem;
+  background-color: $white-bg;
+  &__view{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: .8rem 0;
+    border-bottom: 1px solid black;
+    p{
+      text-align: right;
+      i{
+        margin-right: 1rem;
+      }
+    }
+  }
+  &__list{
+    max-width: 1000px;
+    margin: 7.5rem auto 0;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5px solid $grey-border3;
+    &:not(:first-child){
+      padding: 2rem 0;
+    }
+  }
+  &__info{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__des{
+    margin-left: 3rem;
+}
+  &__icon{
+  margin-left: auto;
+  }
+}
+// Section company
+.p-company{
+  padding-top: 9rem;
+  &__main{
+    display: flex;
+    border-top: 1px solid $black-color;
+    border-bottom: 1px solid $black-color;
+  }
+  &__content{
+    line-height: 1;
+    max-width: 51.0rem;
+    margin-top: 4.5rem;
+    margin-left: 4.5rem;
+    h3{
+      font-size: 2.4rem;
+      margin-top: 2rem;
+    }
+    p{
+      margin-top: 4.5rem;
+      line-height: 2.6rem;
+    }
+  }
+  &--btn{
+    margin-top: 5rem;
+  }
+}
+// Section recruit
+.p-recruit{
+  padding-top: 10rem;
+  &__main{
+    display: flex;
+    justify-content: space-between;
+    background-color: $yellow-color;
+  }
+  &__content{
+    line-height: 1;
+    margin-left: 5rem;
+    margin-top: 4.5rem;
+    h3{
+      font-size: 2.4rem;
+      margin-top: 2rem;
+    }
+    p{
+      color: $black-color;
+      font-size: 1.5rem;
+      margin-top: 4.3rem;
+      span{
+        display: block;
+      }
+    }
+  }
+}
+// CSS contact
+.p-contact{
+  margin-top: 10rem;
+  background-image: url(../img/banner_contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 41.0rem;
+  max-height: 100%;
+  &__main{
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__caption{
+    font-size: 2.8rem;
+    color: $white-bg;
+  }
+  &__list{
+    margin-top: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item{
+    max-width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid $white-bg;  
+    height: 7.5rem;  
+    background-color: #0000007d;
+    &:last-child{
+      background-color: $red-color;
+    }
+    a{
+      h3{
+        font-size: 1.4rem;
+      }
+      p{
+        margin-top: 0.8rem;
+        span{
+          &:first-child{
+            font-size: 1.4rem;
+          }
+          &:last-child{
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

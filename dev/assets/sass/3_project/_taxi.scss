@@ -1,0 +1,102 @@
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.p-taxi {
+    &__list {
+        margin-top: 10rem;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        gap: 4.5rem;
+
+        &:not(:first-child) {
+            margin-top: 10rem;
+        }
+
+        &:nth-child(odd) {}
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        img {
+            height: 35rem;
+        }
+    }
+
+    &__content {
+        h3 {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid $black-color;
+            display: inline-block;
+            line-height: 1;
+            span {
+                &:first-child {
+                    font-size: 4rem;
+                }
+
+                &:last-child {
+                    font-size: 2.6rem;
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+
+        p {
+            margin-top: 3.5rem;
+            font-size: 1.5rem;
+            span{
+                display: block;
+            }
+        }
+
+        &__des {
+            background-color: #eeeeee;
+            margin-top: 3.8rem;
+            padding: 3rem 2.5rem;
+            line-height: 1;
+            font-weight: 600;
+
+            h3 {
+                border: none;
+
+                span {
+                    &:first-child {
+                        font-size: 2rem;
+                    }
+
+                    &:last-child {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            p {
+                line-height: 2.6rem;
+
+                &:first-child {
+                    margin-top: 2.8rem;
+                }
+
+            }
+        }
+    }
+    &__listBottom{
+        margin-top: 10rem;
+        text-align: center;
+        h3{
+            margin-top: 1.6rem;
+            line-height: 1;
+            font-size: 2.6rem;
+        }
+    }
+    &__list2{
+        margin-top: 4.5rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 3rem;
+        position: relative;
+    }
+}

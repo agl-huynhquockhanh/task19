@@ -1,0 +1,121 @@
+/*------------------------------------------------------------
+other
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+// Magrin
+.mt0{
+    margin-top: 0;
+}
+.mt5{
+    margin-top: 5rem;
+}
+.ml3{
+    margin-left: 3rem;
+}
+.mt4{
+    margin-top: 4rem;
+}
+.mt45{
+    margin-top: 4.5rem;
+}
+.mt48{
+    margin-top: 4.8rem;
+}
+.mt8{
+    margin-top: 8rem;
+}
+.mt100{
+    margin-top: 10rem;
+}
+// Banner
+.c-banner{
+    line-height: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-height: 100%;
+    background-color: $grey-bg;
+    &__taxiPage{
+        background-image: url(../img/taxi/banner-taxi.png);
+        height: 43rem;
+        position: relative;
+    }
+    &__hirePage{
+        background-image: url(../img/hire/bannerTop-hire.png);
+        height: 43rem;
+        position: relative;
+    }
+    &__companyPage{
+        background-image: url(../img/company/banner-company.png);
+        height: 43rem;
+        position: relative;
+    }
+    &__verhiclePage{
+        background-image: url(../img/verhicle/banner-verhicle.png);
+        height: 43rem;
+        position: relative;
+    }
+    &__realsePage{
+        background-image: url(../img/banner-realse.png);
+        height: 43rem;
+        position: relative;
+    }
+    &__realsePost{
+        background-image: url(../img/banner-realse-post.png);
+        height: 23rem;
+        position: relative;
+    }
+    &--content{
+        text-align: center;
+        color: $white-bg;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p{
+            margin-top: 3.2rem;
+            font-size: 3.6rem;
+        }
+    }
+    // Breakcrumb
+    &__breakcrumb{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        i{
+            margin: 1.2rem 2.4rem;
+        }
+    }
+    &__contact{
+        margin-top: 3rem;
+        text-align: center;
+        padding-bottom: 3rem;
+        h3{
+            font-size: 2rem;
+        }
+    }
+    &__blockContact{
+        border: 2px solid $red-color;
+        max-width: 73rem;
+        margin: 2.5rem auto 0;
+        padding: 1.5rem 0;
+        background-color: $white-bg;
+        p{
+            span{
+                &:first-child{
+                    font-size: 2rem;
+                }
+                &:last-child{
+                    font-size: 3.2rem;
+                }
+            }
+
+            &:last-child{
+                margin-top: 1.5rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+   
