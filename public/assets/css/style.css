@@ -1867,6 +1867,89 @@ Css of home page
   margin-top: 6rem;
 }
 
+.p-faq__main {
+  margin-top: 8rem;
+}
+
+.p-faq__groupFaq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 3rem;
+}
+
+.p-faq__faqChoose {
+  font-size: 1.6em;
+  font-weight: 600;
+  line-height: 1;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  max-width: 35rem;
+  height: 6rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.p-faq__faqChoose i {
+  margin-right: 1.1rem;
+}
+
+.p-faq__faqList {
+  margin-top: 5rem;
+}
+
+.p-faq__groupTitle {
+  background-image: url(../img/title-faq.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 7.5rem;
+  position: relative;
+}
+
+.p-faq__title {
+  font-size: 2.4rem;
+  line-height: 1;
+  color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.p-faq__item {
+  margin-top: 3rem;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+.p-faq__quest {
+  background-color: #000000;
+  padding: 1.1rem 1.2rem;
+}
+
+.p-faq__textQuest {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.p-faq__icon {
+  margin-left: auto;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/

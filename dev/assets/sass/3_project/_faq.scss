@@ -1,0 +1,69 @@
+.p-faq{
+    &__main{
+        margin-top: 8rem;
+    }
+    &__groupFaq{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+        grid-gap: 3rem;
+    }
+    &__faqChoose{
+        font-size: 1.6em;
+        font-weight: 600;
+        line-height: 1;
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid $grey-border;
+        // padding: 2.2rem 7.8rem;
+        max-width: 35rem;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            margin-right: 1.1rem;
+        }
+    }
+    &__faqList{
+        margin-top: 5rem;
+    }
+    &__groupTitle{
+        background-image: url(../img/title-faq.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 7.5rem;
+        position: relative;
+    }
+    &__title{
+        font-size: 2.4rem;
+        line-height: 1;
+        color: $white-bg;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__item{
+        margin-top: 3rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $grey-border;
+    }
+    &__quest{
+        background-color: $black-color;
+        padding: 1.1rem 1.2rem;
+    }
+    &__textQuest{
+        margin-left: 2rem;
+        cursor: pointer;
+    }
+    &__icon{
+        margin-left: auto;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+}
