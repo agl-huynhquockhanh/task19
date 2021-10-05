@@ -1,0 +1,33 @@
+.p-confirm{
+    &__confirm{
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-top: 2.8rem;
+        margin-left: 5.5rem;
+    }
+    &__inputForm{
+        margin-top: 3.5rem;
+        display: flex;
+    }
+    &__name{
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        width: 25rem;
+        color: $black-color;
+        &--postion{
+            margin-bottom: auto;
+        }
+        &--textarea{
+            width: 25rem;
+        }
+    }
+    &__btnGroup{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10.4rem;
+        margin-top: 6rem;
+    }
+}

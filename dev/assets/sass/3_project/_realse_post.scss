@@ -21,7 +21,6 @@
         margin-top: 3.5rem;
     }
     &__contentPost{
-        margin-top: 5rem;
         line-height: 2.6rem;
         font-size: 1.5rem;
         p{
@@ -48,38 +47,46 @@
             margin-top: 0;
         }
     }
+
     &__pNav{
         line-height: 1;
         margin-top: 3.5rem;
+        font-size: 1.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // padding: 2.5rem 0;
+        height: 6.6rem;
         border: 1px solid $grey-border;
-    }
-    &__next,
-    &__prev{
-        font-size: 1.5rem;
-        width: 50%;
-        display: flex;
-        align-items: center;
-    }
-    // &__next{
-    //     width: 50%;
-    // }
-    &__prev{
-        text-align: right;
-        a{
-            &:first-child{
-                width: 320px;
-            }
+        padding: 0 1rem;
+        & > *{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
         }
+    }
+    &__next{
+        border-right: .5px solid $grey-border;
+    }
+    &__prev{
+        border-left: .5px solid $grey-border;
+        justify-content: flex-end;
+    }
+    &__link{
+        max-width: 285px;
+        text-align: right;
+        line-height: 2.6rem;
     }
     &__iconLeft{
         margin-right: 1.8rem;
-        border-right: 1px solid $grey-border;
     }
     &__iconRight{
         margin-left: 1.8rem;
     }
 }
+
+
+// <a href="#"><i class="fas fa-angle-double-left p-realsePost__iconLeft"></i></a>
+//                         <a href="#">第２２回　タクシー優良運転者協会長表彰</a>
+// <a href="#">【ラッピングタクシー】“クナイプさくらタクシー”大好評運行中</a>
+//                         <a href="#"><i class="fas fa-angle-double-right p-realsePost__iconRight"></i></a>

@@ -35,6 +35,35 @@ btn
     background-color: transparent;
     color: $white-bg;
     }
+    // Button btn of page contact
+    &__contactForm{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 7rem;
+        background-color: $black-color;
+        color: $white-bg;
+        font-size: 1.8rem;
+        &:hover{
+            background-color: $yellow-color;
+        }
+    }
+    // Btn confirm
+    &__confirmForm{
+        padding: 2rem 10.8rem;
+        font-size: 1.8rem;
+        &--grey{
+            background-color: $grey-border3;
+        }
+        &--black{
+            background-color: $black-color;
+            color: $white-bg;
+            margin-left: 4rem;
+        }
+        &:hover{
+            background-color: $yellow-color;
+        }
+    }
     // Button page paxi of banner
     &__taxiBanner{
         font-size: 2rem;

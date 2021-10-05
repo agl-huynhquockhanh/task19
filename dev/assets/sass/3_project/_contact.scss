@@ -1,0 +1,96 @@
+.p-contact{
+    &__form{
+        margin-top: 5rem;
+        margin-left: 5.5rem;
+        font-weight: 600;
+    }
+    &__radioGroup{
+        display: flex;
+        font-weight: 600;
+    }
+    &__name{
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        width: 35rem;
+        color: $black-color;
+        &--postion{
+            margin-bottom: auto;
+        }
+    }
+    &__radioList{
+        display: flex;
+        
+    }
+    &__radioItem{
+        &:last-child{
+            margin-left: 13.7rem;
+        }
+    }
+    &__inputForm{
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__textInput{
+        flex: 1;
+        max-width: 70.5rem;
+        border: 1px solid grey;
+        border-radius: 5px;
+        height: 3.5rem;
+        &--height{
+            height: 18rem;
+        }
+    }
+    &__inputForm1{
+        margin-top: 3.5rem;
+        display: flex;
+    }
+    &__textInput1{
+        display: flex;
+        align-items: center;
+        input{
+            max-width: 9rem;
+            height: 3.5rem;
+            border-radius: 5px;
+            border: 1px solid $grey-border;
+        }
+    }
+    &__notifi{
+        margin-top: 10rem;
+        line-height: 1;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-left: 5.5rem;
+    }
+    &__speech{
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $grey-border;
+    }
+    &__infoContact{
+        margin-top: 2.4rem;
+    }
+    &__phoneList{
+        margin-top: 2.5rem;
+    }
+    &__phoneItem{
+        display: flex;
+        justify-content: space-between;
+        max-width: 37.5rem;
+        margin-left: 3.6rem;
+        &:not(:first-child){
+            margin-top: 1.2rem;
+        }
+    }
+    &__phone{
+        color: $blue-color4;
+        text-decoration: underline;
+
+    }
+    &__policy{
+        margin-top: 4rem;
+        line-height: 2.6rem;
+    }
+}

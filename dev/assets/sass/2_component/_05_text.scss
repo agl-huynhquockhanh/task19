@@ -7,3 +7,10 @@ text
 .c-textSpan{
     display: block;
 }
+.c-text{
+    background-color: $yellow-color;
+    color: $white-bg;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    margin-left: 1.7rem;
+}

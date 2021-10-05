@@ -319,6 +319,40 @@ btn
   color: #ffffff;
 }
 
+.c-btn__contactForm {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-top: 7rem;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.c-btn__contactForm:hover {
+  background-color: #fcd000;
+}
+
+.c-btn__confirmForm {
+  padding: 2rem 10.8rem;
+  font-size: 1.8rem;
+}
+
+.c-btn__confirmForm--grey {
+  background-color: #dddddd;
+}
+
+.c-btn__confirmForm--black {
+  background-color: #000000;
+  color: #ffffff;
+  margin-left: 4rem;
+}
+
+.c-btn__confirmForm:hover {
+  background-color: #fcd000;
+}
+
 .c-btn__taxiBanner {
   font-size: 2rem;
   color: #ffffff;
@@ -483,6 +517,14 @@ text
   display: block;
 }
 
+.c-text {
+  background-color: #fcd000;
+  color: #ffffff;
+  padding: .5rem 1.5rem;
+  border-radius: .5rem;
+  margin-left: 1.7rem;
+}
+
 /*------------------------------------------------------------
 navi
 ------------------------------------------------------------*/
@@ -539,6 +581,10 @@ line
 ------------------------------------------------------------*/
 /*
 ------------------------------------------------------------*/
+.c-line1 {
+  margin-left: 0.7rem;
+}
+
 /*------------------------------------------------------------
 video
 ------------------------------------------------------------*/
@@ -556,6 +602,10 @@ other
 ------------------------------------------------------------*/
 .mt0 {
   margin-top: 0;
+}
+
+.mt07 {
+  margin-left: 0.7rem;
 }
 
 .mt5 {
@@ -576,6 +626,10 @@ other
 
 .mt48 {
   margin-top: 4.8rem;
+}
+
+.mt6 {
+  margin-top: 6rem;
 }
 
 .mt8 {
@@ -628,6 +682,18 @@ other
 .c-banner__realsePost {
   background-image: url(../img/banner-realse-post.png);
   height: 23rem;
+  position: relative;
+}
+
+.c-banner__contactPage {
+  background-image: url(../img/contactPage.png);
+  height: 43rem;
+  position: relative;
+}
+
+.c-banner__faqPage {
+  background-image: url(../img/banner-faq.png);
+  height: 43rem;
   position: relative;
 }
 
@@ -1485,6 +1551,7 @@ Css of home page
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  margin-top: 6rem;
 }
 
 .p-realse__sidebarFlex {
@@ -1516,7 +1583,7 @@ Css of home page
 
 .p-realse__list {
   max-width: 78rem;
-  margin-top: 6rem;
+  margin-top: 0;
   margin-left: 0;
   padding-right: 2.2rem;
 }
@@ -1555,7 +1622,6 @@ Css of home page
 }
 
 .p-realsePost__contentPost {
-  margin-top: 5rem;
   line-height: 2.6rem;
   font-size: 1.5rem;
 }
@@ -1592,39 +1658,213 @@ Css of home page
 .p-realsePost__pNav {
   line-height: 1;
   margin-top: 3.5rem;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
+  height: 6.6rem;
   border: 1px solid #cccccc;
+  padding: 0 1rem;
 }
 
-.p-realsePost__next, .p-realsePost__prev {
-  font-size: 1.5rem;
+.p-realsePost__pNav > * {
   width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
 }
 
-.p-realsePost__prev {
-  text-align: right;
+.p-realsePost__next {
+  border-right: 0.5px solid #cccccc;
 }
 
-.p-realsePost__prev a:first-child {
-  width: 320px;
+.p-realsePost__prev {
+  border-left: 0.5px solid #cccccc;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}
+
+.p-realsePost__link {
+  max-width: 285px;
+  text-align: right;
+  line-height: 2.6rem;
 }
 
 .p-realsePost__iconLeft {
   margin-right: 1.8rem;
-  border-right: 1px solid #cccccc;
 }
 
 .p-realsePost__iconRight {
   margin-left: 1.8rem;
+}
+
+.p-contact__form {
+  margin-top: 5rem;
+  margin-left: 5.5rem;
+  font-weight: 600;
+}
+
+.p-contact__radioGroup {
+  display: -webkit-box;
+  display: flex;
+  font-weight: 600;
+}
+
+.p-contact__name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 35rem;
+  color: #000000;
+}
+
+.p-contact__name--postion {
+  margin-bottom: auto;
+}
+
+.p-contact__radioList {
+  display: -webkit-box;
+  display: flex;
+}
+
+.p-contact__radioItem:last-child {
+  margin-left: 13.7rem;
+}
+
+.p-contact__inputForm {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.p-contact__textInput {
+  -webkit-box-flex: 1;
+  flex: 1;
+  max-width: 70.5rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 3.5rem;
+}
+
+.p-contact__textInput--height {
+  height: 18rem;
+}
+
+.p-contact__inputForm1 {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: flex;
+}
+
+.p-contact__textInput1 {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.p-contact__textInput1 input {
+  max-width: 9rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+.p-contact__notifi {
+  margin-top: 10rem;
+  line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 5.5rem;
+}
+
+.p-contact__speech {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+.p-contact__infoContact {
+  margin-top: 2.4rem;
+}
+
+.p-contact__phoneList {
+  margin-top: 2.5rem;
+}
+
+.p-contact__phoneItem {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 37.5rem;
+  margin-left: 3.6rem;
+}
+
+.p-contact__phoneItem:not(:first-child) {
+  margin-top: 1.2rem;
+}
+
+.p-contact__phone {
+  color: #2722ff;
+  text-decoration: underline;
+}
+
+.p-contact__policy {
+  margin-top: 4rem;
+  line-height: 2.6rem;
+}
+
+.p-confirm__confirm {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.8rem;
+  margin-left: 5.5rem;
+}
+
+.p-confirm__inputForm {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: flex;
+}
+
+.p-confirm__name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 25rem;
+  color: #000000;
+}
+
+.p-confirm__name--postion {
+  margin-bottom: auto;
+}
+
+.p-confirm__name--textarea {
+  width: 25rem;
+}
+
+.p-confirm__btnGroup {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  margin-right: 10.4rem;
+  margin-top: 6rem;
 }
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡

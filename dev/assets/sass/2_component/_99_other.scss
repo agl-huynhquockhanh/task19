@@ -8,6 +8,10 @@ other
 .mt0{
     margin-top: 0;
 }
+.mt07
+{
+    margin-left: 0.7rem;
+}
 .mt5{
     margin-top: 5rem;
 }
@@ -22,6 +26,9 @@ other
 }
 .mt48{
     margin-top: 4.8rem;
+}
+.mt6{
+    margin-top: 6rem;
 }
 .mt8{
     margin-top: 8rem;
@@ -65,6 +72,16 @@ other
     &__realsePost{
         background-image: url(../img/banner-realse-post.png);
         height: 23rem;
+        position: relative;
+    }
+    &__contactPage{
+        background-image: url(../img/contactPage.png);
+        height: 43rem;
+        position: relative;
+    }
+    &__faqPage{
+        background-image: url(../img/banner-faq.png);
+        height: 43rem;
         position: relative;
     }
     &--content{
