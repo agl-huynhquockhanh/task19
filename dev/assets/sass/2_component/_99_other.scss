@@ -5,134 +5,214 @@ other
 /*
 ------------------------------------------------------------*/
 // Magrin
-.mt0{
+.mt0 {
     margin-top: 0;
 }
-.mt07
-{
+
+.mt07 {
     margin-left: 0.7rem;
 }
-.mt5{
+
+.mt5 {
     margin-top: 5rem;
 }
-.ml3{
+
+.ml3 {
     margin-left: 3rem;
 }
-.mt4{
+
+.mt4 {
     margin-top: 4rem;
 }
-.mt45{
+
+.mt45 {
     margin-top: 4.5rem;
 }
-.mt48{
+
+.mt48 {
     margin-top: 4.8rem;
 }
-.mt6{
+
+.mt6 {
     margin-top: 6rem;
 }
-.mt8{
+
+.mt8 {
     margin-top: 8rem;
 }
-.mt100{
+
+.mt100 {
     margin-top: 10rem;
 }
+
 // Banner
-.c-banner{
+.c-banner {
     line-height: 1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     max-height: 100%;
     background-color: $grey-bg;
-    &__taxiPage{
+
+    &__taxiPage {
         background-image: url(../img/taxi/banner-taxi.png);
         height: 43rem;
         position: relative;
     }
-    &__hirePage{
+
+    &__hirePage {
         background-image: url(../img/hire/bannerTop-hire.png);
         height: 43rem;
         position: relative;
     }
-    &__companyPage{
+
+    &__companyPage {
         background-image: url(../img/company/banner-company.png);
         height: 43rem;
         position: relative;
     }
-    &__verhiclePage{
+
+    &__verhiclePage {
         background-image: url(../img/verhicle/banner-verhicle.png);
         height: 43rem;
         position: relative;
     }
-    &__realsePage{
+
+    &__realsePage {
         background-image: url(../img/banner-realse.png);
         height: 43rem;
         position: relative;
     }
-    &__realsePost{
+
+    &__realsePost {
         background-image: url(../img/banner-realse-post.png);
         height: 23rem;
         position: relative;
     }
-    &__contactPage{
+
+    &__contactPage {
         background-image: url(../img/contactPage.png);
         height: 43rem;
         position: relative;
     }
-    &__faqPage{
+
+    &__faqPage {
         background-image: url(../img/banner-faq.png);
         height: 43rem;
         position: relative;
     }
-    &--content{
+
+    &--content {
         text-align: center;
         color: $white-bg;
         position: absolute;
         top: 50%;
         left: 50%;
+        width: 100%;
         transform: translate(-50%, -50%);
-        p{
+
+        p {
             margin-top: 3.2rem;
             font-size: 3.6rem;
         }
     }
+
     // Breakcrumb
-    &__breakcrumb{
+    &__breakcrumb {
         font-size: 1.4rem;
         text-transform: uppercase;
-        i{
+
+        i {
             margin: 1.2rem 2.4rem;
         }
     }
-    &__contact{
+
+    &__contact {
         margin-top: 3rem;
         text-align: center;
         padding-bottom: 3rem;
-        h3{
+
+        h3 {
             font-size: 2rem;
         }
     }
-    &__blockContact{
+
+    &__blockContact {
         border: 2px solid $red-color;
         max-width: 73rem;
         margin: 2.5rem auto 0;
         padding: 1.5rem 0;
         background-color: $white-bg;
-        p{
-            span{
-                &:first-child{
+
+        p {
+            span {
+                &:first-child {
                     font-size: 2rem;
                 }
-                &:last-child{
+
+                &:last-child {
                     font-size: 3.2rem;
                 }
             }
 
-            &:last-child{
+            &:last-child {
                 margin-top: 1.5rem;
                 font-size: 1.4rem;
             }
         }
     }
+
+    // Respodive
+    @media screen and (max-width: 640px) {
+        background-color: $white-bg;
+        &--content {
+            p {
+                font-size: 4.8rem;
+                font-weight: bold;
+            }
+        }
+
+        // Breakcrumb
+        &__breakcrumb {
+            font-size: 2.8rem;
+            padding: 2.1rem 0;
+
+            i {
+                margin: 1.2rem 2.4rem;
+            }
+        }
+
+        &__contact {
+            h3 {
+                font-size: 2rem;
+                font-size: 3.2rem;
+                max-width: 52.8rem;
+                margin: 0 auto;
+                font-weight: 500;
+            }
+        }
+
+        &__blockContact {
+            max-width: 56rem;
+            margin-top: 3rem;
+            p {
+                span {
+                    &:first-child {
+                        font-size: 3.2rem;
+                        text-transform: uppercase;
+                    }
+    
+                    &:last-child {
+                        font-size: 4rem;
+                        font-weight: 600;
+                    }
+                }
+    
+                &:last-child {
+                    margin-top: 1.5rem;
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
 }
-   

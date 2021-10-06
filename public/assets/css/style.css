@@ -19,6 +19,7 @@ time, mark, audio, video {
   border: 0;
   outline: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 article, aside, details, figcaption, figure,
@@ -171,6 +172,46 @@ img {
 .c-header__bottom__item:hover a {
   padding-bottom: 1.2rem;
   border-bottom: 2px solid #000000;
+}
+
+.c-header__mobile {
+  color: #000000;
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .c-header {
+    padding: 2rem 2rem;
+  }
+  .c-header__top {
+    display: none;
+  }
+  .c-header__bottom__menu {
+    display: none;
+  }
+  .c-header__logo img {
+    width: 36rem;
+    height: 7.4rem;
+  }
+  .c-header__mobile {
+    display: inline-block;
+    cursor: pointer;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    text-transform: uppercase;
+  }
+  .c-header__mobile i {
+    font-size: 7rem;
+  }
+  .c-header__mobile span {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
 }
 
 /*------------------------------------------------------------
@@ -394,6 +435,12 @@ btn
   justify-content: center;
 }
 
+@media screen and (max-width: 640px) {
+  .c-btn__taxiBanner {
+    font-size: 3.2rem;
+  }
+}
+
 .c-page {
   width: 35px;
   height: 35px;
@@ -595,169 +642,6 @@ video
 ------------------------------------------------------------*/
 /*
 ------------------------------------------------------------*/
-/*------------------------------------------------------------
-other
-------------------------------------------------------------*/
-/*
-------------------------------------------------------------*/
-.mt0 {
-  margin-top: 0;
-}
-
-.mt07 {
-  margin-left: 0.7rem;
-}
-
-.mt5 {
-  margin-top: 5rem;
-}
-
-.ml3 {
-  margin-left: 3rem;
-}
-
-.mt4 {
-  margin-top: 4rem;
-}
-
-.mt45 {
-  margin-top: 4.5rem;
-}
-
-.mt48 {
-  margin-top: 4.8rem;
-}
-
-.mt6 {
-  margin-top: 6rem;
-}
-
-.mt8 {
-  margin-top: 8rem;
-}
-
-.mt100 {
-  margin-top: 10rem;
-}
-
-.c-banner {
-  line-height: 1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  max-height: 100%;
-  background-color: #eeeeee;
-}
-
-.c-banner__taxiPage {
-  background-image: url(../img/taxi/banner-taxi.png);
-  height: 43rem;
-  position: relative;
-}
-
-.c-banner__hirePage {
-  background-image: url(../img/hire/bannerTop-hire.png);
-  height: 43rem;
-  position: relative;
-}
-
-.c-banner__companyPage {
-  background-image: url(../img/company/banner-company.png);
-  height: 43rem;
-  position: relative;
-}
-
-.c-banner__verhiclePage {
-  background-image: url(../img/verhicle/banner-verhicle.png);
-  height: 43rem;
-  position: relative;
-}
-
-.c-banner__realsePage {
-  background-image: url(../img/banner-realse.png);
-  height: 43rem;
-  position: relative;
-}
-
-.c-banner__realsePost {
-  background-image: url(../img/banner-realse-post.png);
-  height: 23rem;
-  position: relative;
-}
-
-.c-banner__contactPage {
-  background-image: url(../img/contactPage.png);
-  height: 43rem;
-  position: relative;
-}
-
-.c-banner__faqPage {
-  background-image: url(../img/banner-faq.png);
-  height: 43rem;
-  position: relative;
-}
-
-.c-banner--content {
-  text-align: center;
-  color: #ffffff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.c-banner--content p {
-  margin-top: 3.2rem;
-  font-size: 3.6rem;
-}
-
-.c-banner__breakcrumb {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
-
-.c-banner__breakcrumb i {
-  margin: 1.2rem 2.4rem;
-}
-
-.c-banner__contact {
-  margin-top: 3rem;
-  text-align: center;
-  padding-bottom: 3rem;
-}
-
-.c-banner__contact h3 {
-  font-size: 2rem;
-}
-
-.c-banner__blockContact {
-  border: 2px solid #82141a;
-  max-width: 73rem;
-  margin: 2.5rem auto 0;
-  padding: 1.5rem 0;
-  background-color: #ffffff;
-}
-
-.c-banner__blockContact p span:first-child {
-  font-size: 2rem;
-}
-
-.c-banner__blockContact p span:last-child {
-  font-size: 3.2rem;
-}
-
-.c-banner__blockContact p:last-child {
-  margin-top: 1.5rem;
-  font-size: 1.4rem;
-}
-
-/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-// Project .p-
-≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
-/*------------------------------------------------------------
-Css of home page
-------------------------------------------------------------*/
 .mySlides {
   display: block;
   position: relative;
@@ -867,6 +751,289 @@ Css of home page
   }
 }
 
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides__gallery {
+  display: none;
+}
+
+.mySlides__gallery img {
+  height: 36rem;
+}
+
+.mySlides__gallery:first-child {
+  display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev__gallery,
+.next__gallery {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next__gallery {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev__gallery:hover,
+.next__gallery:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row {
+  margin-top: 1.5rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+}
+
+.column:first-child {
+  display: block;
+}
+
+/* Add a transparency effect for thumnbail images */
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*------------------------------------------------------------
+other
+------------------------------------------------------------*/
+/*
+------------------------------------------------------------*/
+.mt0 {
+  margin-top: 0;
+}
+
+.mt07 {
+  margin-left: 0.7rem;
+}
+
+.mt5 {
+  margin-top: 5rem;
+}
+
+.ml3 {
+  margin-left: 3rem;
+}
+
+.mt4 {
+  margin-top: 4rem;
+}
+
+.mt45 {
+  margin-top: 4.5rem;
+}
+
+.mt48 {
+  margin-top: 4.8rem;
+}
+
+.mt6 {
+  margin-top: 6rem;
+}
+
+.mt8 {
+  margin-top: 8rem;
+}
+
+.mt100 {
+  margin-top: 10rem;
+}
+
+.c-banner {
+  line-height: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 100%;
+  background-color: #eeeeee;
+}
+
+.c-banner__taxiPage {
+  background-image: url(../img/taxi/banner-taxi.png);
+  height: 43rem;
+  position: relative;
+}
+
+.c-banner__hirePage {
+  background-image: url(../img/hire/bannerTop-hire.png);
+  height: 43rem;
+  position: relative;
+}
+
+.c-banner__companyPage {
+  background-image: url(../img/company/banner-company.png);
+  height: 43rem;
+  position: relative;
+}
+
+.c-banner__verhiclePage {
+  background-image: url(../img/verhicle/banner-verhicle.png);
+  height: 43rem;
+  position: relative;
+}
+
+.c-banner__realsePage {
+  background-image: url(../img/banner-realse.png);
+  height: 43rem;
+  position: relative;
+}
+
+.c-banner__realsePost {
+  background-image: url(../img/banner-realse-post.png);
+  height: 23rem;
+  position: relative;
+}
+
+.c-banner__contactPage {
+  background-image: url(../img/contactPage.png);
+  height: 43rem;
+  position: relative;
+}
+
+.c-banner__faqPage {
+  background-image: url(../img/banner-faq.png);
+  height: 43rem;
+  position: relative;
+}
+
+.c-banner--content {
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.c-banner--content p {
+  margin-top: 3.2rem;
+  font-size: 3.6rem;
+}
+
+.c-banner__breakcrumb {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.c-banner__breakcrumb i {
+  margin: 1.2rem 2.4rem;
+}
+
+.c-banner__contact {
+  margin-top: 3rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.c-banner__contact h3 {
+  font-size: 2rem;
+}
+
+.c-banner__blockContact {
+  border: 2px solid #82141a;
+  max-width: 73rem;
+  margin: 2.5rem auto 0;
+  padding: 1.5rem 0;
+  background-color: #ffffff;
+}
+
+.c-banner__blockContact p span:first-child {
+  font-size: 2rem;
+}
+
+.c-banner__blockContact p span:last-child {
+  font-size: 3.2rem;
+}
+
+.c-banner__blockContact p:last-child {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 640px) {
+  .c-banner {
+    background-color: #ffffff;
+  }
+  .c-banner--content p {
+    font-size: 4.8rem;
+    font-weight: bold;
+  }
+  .c-banner__breakcrumb {
+    font-size: 2.8rem;
+    padding: 2.1rem 0;
+  }
+  .c-banner__breakcrumb i {
+    margin: 1.2rem 2.4rem;
+  }
+  .c-banner__contact h3 {
+    font-size: 2rem;
+    font-size: 3.2rem;
+    max-width: 52.8rem;
+    margin: 0 auto;
+    font-weight: 500;
+  }
+  .c-banner__blockContact {
+    max-width: 56rem;
+    margin-top: 3rem;
+  }
+  .c-banner__blockContact p span:first-child {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+  }
+  .c-banner__blockContact p span:last-child {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .c-banner__blockContact p:last-child {
+    margin-top: 1.5rem;
+    font-size: 2.6rem;
+  }
+}
+
+/*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+// Project .p-
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
 .p-service {
   background-color: #eeeeee;
   padding: 6rem 0 9rem;
@@ -1406,85 +1573,6 @@ Css of home page
   transform: scale(1.2);
 }
 
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides__gallery {
-  display: none;
-}
-
-.mySlides__gallery img {
-  height: 36rem;
-}
-
-.mySlides__gallery:first-child {
-  display: block;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev__gallery,
-.next__gallery {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next__gallery {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev__gallery:hover,
-.next__gallery:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.row {
-  margin-top: 1.5rem;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 20%;
-}
-
-.column:first-child {
-  display: block;
-}
-
-/* Add a transparency effect for thumnbail images */
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
 .p-verhicle__title {
   display: -webkit-box;
   display: flex;
@@ -1898,7 +1986,7 @@ Css of home page
   margin-right: 1.1rem;
 }
 
-.p-faq__faqList {
+.p-faq__faqTotal {
   margin-top: 5rem;
 }
 
@@ -1923,18 +2011,27 @@ Css of home page
   transform: translate(-50%, -50%);
 }
 
-.p-faq__item {
+.p-faq__faqItem {
   margin-top: 3rem;
   font-size: 2rem;
+  position: relative;
+}
+
+.p-faq__faqList {
+  margin-top: 3rem;
+}
+
+.p-faq__question {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  position: relative;
   padding-bottom: 2rem;
   border-bottom: 1px solid #cccccc;
 }
 
-.p-faq__quest {
+.p-faq__imgQuest {
   background-color: #000000;
   padding: 1.1rem 1.2rem;
 }
@@ -1948,6 +2045,39 @@ Css of home page
   margin-left: auto;
   margin-right: 2rem;
   cursor: pointer;
+}
+
+.p-faq__answer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.p-faq__active .p-faq__answer {
+  position: relative;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #cccccc;
+  overflow: inherit;
+}
+
+.p-faq__answerBlock {
+  display: block;
+}
+
+.p-faq__imgAns {
+  background-color: #fcd000;
+  padding: 1.1rem 1.3rem;
+}
+
+.p-faq__textAns {
+  margin-left: 2rem;
 }
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡

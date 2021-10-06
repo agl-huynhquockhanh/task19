@@ -46,6 +46,7 @@ $(document).ready( ()=>{
     tab2.classList.add("p-service__color");
     tab1.classList.remove("p-service__color");
   });
+  
 });
 
 
@@ -76,4 +77,14 @@ function showSlides__gallery(n) {
   }
   slides__gallery[slideIndex__gallery-1].style.display = "block";
   dots__gallery[slideIndex__gallery-1].className += " active";
+}
+
+// Accordion page faq
+function accordion(){
+  const accordion = document.getElementsByClassName('p-faq__faqItem');
+  for (i = 0; i < accordion.length; i++){
+  accordion[i].addEventListener('click', function(){
+    this.classList.toggle('p-faq__active');
+  })
+}
 }

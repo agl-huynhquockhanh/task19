@@ -43,4 +43,42 @@
             }
         }
     }
+    &__mobile{
+        color: $black-color;
+        display: none;
+    }
+
+    // Responsive
+    @media screen and (max-width: 960px) {
+        padding: 2rem 2rem;
+        &__top{
+            display: none;
+        }
+        &__bottom__menu{
+            display: none;
+        }
+        &__logo{
+            img{
+                width: 36rem;
+                height: 7.4rem;
+            }
+        }
+
+        &__mobile{
+            display: inline-block;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-transform: uppercase;
+            i{
+                font-size: 7rem;
+            }
+            span{
+                font-size: 2.4rem;
+                font-weight: 600;
+            }
+        }
+    }
+    
 }

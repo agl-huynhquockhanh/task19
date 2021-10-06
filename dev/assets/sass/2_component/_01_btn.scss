@@ -97,6 +97,14 @@ btn
         align-items: center;
         justify-content: center;
     }
+    @media screen and (max-width: 640px) {
+        // Button page paxi of banner
+        &__taxiBanner{
+            font-size: 3.2rem;
+        }
+        
+    }
+    
 }
 // CSS btn pagination
 .c-page{
